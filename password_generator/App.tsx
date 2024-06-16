@@ -4,8 +4,24 @@ import {
     StyleSheet
 } from 'react-native'
 
-
 import * as Yup from 'yup'
+import React, { useState } from 'react'
+
+const genretePasswordString = (passwordLength: string) => {
+
+}
+
+const createPassword = (charecters: string, passwordLength: number) => {
+    let result = ''
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+
+    }
+}
+
+const resetPassword = () => {
+
+}
 
 const PasswordSchema = Yup.object().shape({
     passwordLength:
@@ -16,11 +32,19 @@ const PasswordSchema = Yup.object().shape({
 })
 
 
-
 export default function App() {
+    const [password, setPassword] = useState('')
+    const [isPassGenerated, setIsPassGenerated] = useState(false)
+
+    const [lowerCase, setLowerCase] = useState(true)
+    const [upperCase, setupperCase] = useState(false)
+    const [numbers, setNumbers] = useState(false)
+    const [symbols, setSymbols] = useState(false)
+
+
     return (
         <SafeAreaView>
-            <Text>askdnslncs dcja</Text>
+            <Text>Password Generator</Text>
         </SafeAreaView>
     )
 }
