@@ -112,7 +112,7 @@ function App(): React.JSX.Element {
         }
 
         checkIsWinner()
-        RNReactNativeHapticFeedback.trigger('impactHeavy', options)
+        RNReactNativeHapticFeedback.trigger('impactLight', options)
     }
 
 
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#38CC77',
     },
     playerO: {
-        backgroundColor: '#F7CD2E',
+        backgroundColor: '#F19ED2',
     },
     grid: {
         margin: 12,
